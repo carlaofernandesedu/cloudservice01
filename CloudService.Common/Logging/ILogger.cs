@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Runtime.CompilerServices;
 
 namespace CloudService.Common.Logging
@@ -15,15 +11,21 @@ namespace CloudService.Common.Logging
     /// </summary>
     public interface ILogger
     {
-        void Information(object message);
+        void Information(object message,
+            [CallerMemberName] string memberName = "",
+            [CallerFilePath] string sourceFilePath = "");
         void Information(string fmt, params object[] vars);
         void Information(Exception exception, string fmt, params object[] vars);
-        void Warning(object message);
+        void Warning(object message,
+            [CallerMemberName] string memberName = "",
+            [CallerFilePath] string sourceFilePath = "");
         void Warning(string fmt, params object[] vars);
         //void Warning(Exception exception, object message); implementacao especifica NLog
         void Warning(Exception exception, string fmt, params object[] vars);
 
-        void Error(object message);
+        void Error(object message,
+            [CallerMemberName] string memberName = "",
+            [CallerFilePath] string sourceFilePath = "");
         void Error(string fmt, params object[] vars);
         //void Error(Exception exception, object message); implementacao especifica Nlog
         void Error(Exception exception,

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace CloudService.Common.Logging
 {
     /// <summary>
@@ -42,9 +37,9 @@ namespace CloudService.Common.Logging
         //        _loggerFactory.Initialize();
         //}
 
-        public static ILogger GetLogger<T>()
+        public static ILogger GetLogger<Z>()
         {
-            return _factory.Create(typeof(T).Name);
+            return _factory.Create(typeof(Z).Name);
         }
     
         public static ILogger GetLogger()
@@ -56,6 +51,6 @@ namespace CloudService.Common.Logging
         {
             return _factory.Create(logName);
         }    
-    }
+    
     }
 }
