@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Text;
 using System.Diagnostics;
+using CloudService.Common.Logging;
 
 
-namespace CloudService.Common.Logging
+namespace CloudService.GenericLog
 {
     /// <summary>
     /// Classe implementa o Log baseado no artigo de praticas de monitoramento
@@ -95,11 +96,9 @@ namespace CloudService.Common.Logging
         {
             // Simple exception formatting: for a more comprehensive version see 
             // http://code.msdn.microsoft.com/windowsazure/Fix-It-app-for-Building-cdd80df4
-            var sb = new StringBuilder();
-            sb.Append(string.Format(fmt, vars));
-            sb.Append(" Exception: ");
-            sb.Append(exception.ToString());
-            return sb.ToString();
+            var msg = string.Format(fmt, vars);
+            var msgfinal = string.Format(";Exception Details={0}",ExceptionUtils.FormatException(exception, includeContext:true));
+            return (msg + msgfinal);
         }
 
         private static string FormatExceptionMessage(Exception exception, string memberName, string sourceFilePath, int sourceLineNumber)
@@ -109,7 +108,7 @@ namespace CloudService.Common.Logging
             sb.Append(" Exception: ");
             sb.Append(exception.ToString());
             var errorinner = exception.InnerException == null ? "" : exception.InnerException.ToString();
-            sb.AppendLine(errorinner);
+            sb.Append(" StackTrace:" + errorinner);
             return sb.ToString();
         }
         #endregion
