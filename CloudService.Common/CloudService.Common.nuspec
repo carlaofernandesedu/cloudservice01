@@ -2,11 +2,11 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>CloudService.Common</id>
-    <version>$version$</version>
-    <authors>$author$</authors>
-    <owners>$author$</owners>
+    <version>1.0.0.0</version>
+    <authors>Autor</authors>
+    <owners>Autor</owners>
     <iconUrl></iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>$description$</description>
+    <description>Biblioteca base para implementar LOG</description>
   </metadata>
 </package>
