@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>CloudService.Common</id>
+        <version>1.0.0.0</version>
+        <title>CloudService.Common</title>
+        <authors>andre</authors>
+        <owners>andre</owners>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Biblioteca base para implementar log</description>
+    </metadata>
+    <files>
+        <file src="bin\CloudService.Common.dll" target="lib\net45\CloudService.Common.dll" />
+    </files>
+</package>
