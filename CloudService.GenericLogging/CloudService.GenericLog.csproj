@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ExceptionUtils.cs" />
+    <Compile Include="FactoryGenericLogger.cs" />
     <Compile Include="GenericLogger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudService.GenericLog", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudService.FactoryLogger", "CloudService.FactoryLogger\CloudService.FactoryLogger.csproj", "{62D57AB7-42B2-4B55-B1B6-E89168FB9CFF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudService.Log4NetLog", "CloudService.Log4NetLogging\CloudService.Log4NetLog.csproj", "{CFB3188E-635D-462B-AEFB-C62FA6895454}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,12 @@ Global
 		{62D57AB7-42B2-4B55-B1B6-E89168FB9CFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{62D57AB7-42B2-4B55-B1B6-E89168FB9CFF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{62D57AB7-42B2-4B55-B1B6-E89168FB9CFF}.Release|x64.ActiveCfg = Release|Any CPU
+		{CFB3188E-635D-462B-AEFB-C62FA6895454}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFB3188E-635D-462B-AEFB-C62FA6895454}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFB3188E-635D-462B-AEFB-C62FA6895454}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{CFB3188E-635D-462B-AEFB-C62FA6895454}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFB3188E-635D-462B-AEFB-C62FA6895454}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFB3188E-635D-462B-AEFB-C62FA6895454}.Release|x64.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
